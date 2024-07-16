@@ -6,6 +6,7 @@ export const ContentHome = styled.div`
     flex-direction: column;
     gap: 4rem;
     height: 100%;
+    padding-inline: 2rem;
     position: relative;
     z-index: 2;
 
@@ -13,12 +14,14 @@ export const ContentHome = styled.div`
         border: 1px solid transparent;
         padding: 1.2rem 1rem;
         position: relative;
-        width: 70%;
+        text-align: center;
+        width: 100%;
 
         img {
             clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+            text-align: center;
             margin: 0 auto;
-            width: 90%;
+            width: 80%;
         }
         
         &::before {
@@ -31,9 +34,9 @@ export const ContentHome = styled.div`
             left: 50%;
             margin: auto;
             position: absolute;
-            top: 50%;
+            top: 49.5%;
             transform: translateX(-50%) translateY(-50%);
-            width: 84%;
+            width: 76%;
             z-index: -1;
         }
 
@@ -61,7 +64,6 @@ export const ContentHome = styled.div`
         font-size: 1.4rem;
         font-weight: 300;
         gap: 1rem;
-        padding-inline: 3rem;
 
         h1 {
             font-size: 2.5rem;

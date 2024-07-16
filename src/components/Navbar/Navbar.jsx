@@ -27,7 +27,7 @@ function Header() {
 
     return (
         <HeaderContainer>
-            
+
             <NavContainer>
                 <Logo src={img_logo} alt="logo-fagner" />
                 <HamburgerIcon
@@ -50,11 +50,13 @@ function Header() {
 
             <Nav open={openNav}>
                 <NavList>
-                    {navigation.map((el, index) => (
-                        <LiNav key={index} as="li" bg_after={el.colorAfter}>
-                            {el.titleNav}
-                        </LiNav>
-                    ))}
+                    {
+                        navigation.map((el, index) => (
+                            <LiNav key={index} as="li" bg_after={el.colorAfter}>
+                                {el.titleNav}
+                            </LiNav>
+                        ))
+                    }
                 </NavList>
             </Nav>
 

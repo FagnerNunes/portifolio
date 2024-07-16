@@ -1,6 +1,6 @@
 import React from 'react';
 import bgHome from '../../assets/background/bg-home.jpg';
-import imgPerfil from '../../assets/images/image-home-fn.png';
+import imgPerfil from '../../assets/images/perfil/perfil-fagner.png';
 import { BsChevronDown } from "react-icons/bs";
 import { SectionPrincipal, Overlay } from '../../components/Sections/Section';
 import {
@@ -11,7 +11,7 @@ import {
 const Home = () => {
     return (
         <>
-            <SectionPrincipal bgImage={bgHome}>
+            <SectionPrincipal bgImage={bgHome} height="100svh">
 
                 <Overlay />
 

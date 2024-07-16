@@ -5,10 +5,11 @@ export const SectionPrincipal = styled.div`
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    height: ${props => props.height ?? 'auto'};
     padding-block: 80px;
     position: relative;
     width: 100vw;
-    z-index: -2;
+    z-index: 1;
 `;
 
 export const Overlay = styled.div`
@@ -19,5 +20,15 @@ export const Overlay = styled.div`
     position: absolute;
     top: 0;
     width: 100%;
-    z-index: 0;
+    z-index: -1;
 `;
+
+export const Title = styled.h3`
+    color: #fff;
+    font-family: 'Fira Code', monospace;
+    font-size: 1.5rem;
+`
+
+export const Text = styled.p`
+    color: #fff;
+`
