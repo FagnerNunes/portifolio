@@ -25,11 +25,25 @@ export const Conteudo = styled.div`
     font-family: 'Fira Code', monospace;
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: .7rem;
     position: relative;
 
     p {
         font-weight: lighter;
+    }
+
+    a {
+        align-items: center;
+        display: flex;
+        gap: .4rem;
+        color: #EEE;
+        opacity: .8;
+        max-width: 250px;
+
+        &:hover {
+            color: #fff;
+            opacity: 1;
+        }
     }
 `
 
@@ -37,7 +51,10 @@ export const CardsProject = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-block: 1rem;
+    padding: 1rem;
+    background-color: #172a53;
+    box-shadow: 0 0 10px .3px rgba(0, 0, 0, .1);
+    border-radius: .7rem;
 
     figure {
         position: relative;
@@ -49,7 +66,14 @@ export const CardsProject = styled.div`
         }
 
         img {
-            max-width: 100%;
+            border-radius: .5rem;
+            min-height: 180px;
+            width: 100%;
+            object-fit: cover;
         }
+    }
+
+    @media (min-width: 1024px){
+        width: 380px;
     }
 `

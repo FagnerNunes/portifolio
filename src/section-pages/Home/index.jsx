@@ -6,25 +6,27 @@ import { SectionPrincipal, Overlay } from '../../components/Sections/Section';
 import {
     ContentHome,
     ArrowButton,
+    ImagePerfil,
+    Apresentation
 } from './styled';
 
 const Home = () => {
     return (
         <>
-            <SectionPrincipal bgImage={bgHome} height="100svh">
+            <SectionPrincipal bgImage={bgHome}>
 
                 <Overlay />
 
                 <ContentHome>
-                    <figure>
+                    <ImagePerfil>
                         <img src={imgPerfil} alt="Perfil - Fagner" />
-                    </figure>
+                    </ImagePerfil>
 
-                    <div className='apresentacao'>
+                    <Apresentation>
                         <p>Olá, eu sou</p>
                         <h1>Fagner Nunes</h1>
                         <p>Desenvolvedor Full-stack</p>
-                    </div>
+                    </Apresentation>
                     
                     <ArrowButton className="btn-arrow">
                         <BsChevronDown fontSize={30} color='#D1D1D1' />

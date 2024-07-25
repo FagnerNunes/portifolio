@@ -7,71 +7,90 @@ export const ContentHome = styled.div`
     gap: 4rem;
     height: 100%;
     padding-inline: 2rem;
-    position: relative;
+    padding-top: 60px;
     z-index: 2;
 
-    figure {
-        border: 1px solid transparent;
-        padding: 1.2rem 1rem;
-        position: relative;
-        text-align: center;
+    @media (min-width: 1024px){
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding-inline: 4rem;
         width: 100%;
+        max-width: 1400px;
+    }
+`;
 
-        img {
-            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-            text-align: center;
-            margin: 0 auto;
-            width: 80%;
-        }
-        
-        &::before {
-            animation: animar_borda 4s linear infinite;
-            clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-            content: '';
-            background-image: linear-gradient(-45deg, #1139eb, #10db87);
-            background-size: 600% 600%;
-            height: 90%;
-            left: 50%;
-            margin: auto;
-            position: absolute;
-            top: 49.5%;
-            transform: translateX(-50%) translateY(-50%);
-            width: 76%;
-            z-index: -1;
+export const ImagePerfil = styled.figure`
+    border: 1px solid transparent;
+    padding: 1.2rem 1rem;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    img {
+        animation: animar_borda 6s linear infinite;
+        border-top: 3px solid #10a2db;
+        border-right: 3px solid #10a2db;
+        border-bottom: 3px solid #10db87;
+        border-left: 3px solid #10db87;
+        clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+        text-align: center;
+        margin: 0 auto;
+        max-width: 350px;
+        width: 80%;
+
+        @media (min-width: 1024px){
+            width: 100%;
         }
 
         @keyframes animar_borda {
-            0% {
-                background-position: 0 0;
+            0%, 100% {
+                border-top: 3px solid #10a2db;
+                border-right: 3px solid #10a2db;
+                border-bottom: 3px solid #10db87;
+                border-left: 3px solid #10db87;
             }
             50% {
-                background-position: 50% 50%;
-            }
-            100% {
-                background-position: 100% 100%;
+                border-bottom: 3px solid #10a2db;
+                border-left: 3px solid #10a2db;
+                border-top: 3px solid #10db87;
+                border-right: 3px solid #10db87;
             }
         }
     }
 
-    .apresentacao {
-        align-self: flex-start;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        font-family: 'Fira Code', monospace;
-        font-style: normal;
-        font-optical-sizing: auto;
-        font-size: 1.4rem;
-        font-weight: 300;
-        gap: 1rem;
+    @media (min-width: 1024px){
+        width: auto;
+    }
+`
+
+export const Apresentation = styled.div`
+    align-self: flex-start;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Code', monospace;
+    font-style: normal;
+    font-optical-sizing: auto;
+    font-size: 1.4rem;
+    font-weight: 300;
+    gap: 1rem;
+
+    h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+    }
+
+    @media (min-width: 1024px){
+        height: 100%;
+        justify-content: center;
 
         h1 {
-            font-size: 2.5rem;
-            font-weight: bold;
-            text-shadow: 0px 0px 2px rgba(255, 255, 255, 1);
+            font-size: 4rem;
         }
     }
-`;
+`
 
 export const ArrowButton = styled.button`
     animation: animar_btn_y 4s ease-in-out infinite;
@@ -84,9 +103,13 @@ export const ArrowButton = styled.button`
             transform: translateY(-20px);
         }
         
-        70% {
+        60% {
             transform: translateY(0);
         }
+    }
+
+    @media (min-width: 1024px){
+        display: none;
     }
 `;
 

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import img_logo from '../../assets/icons/logo.svg';
-import '../../assets/styles/animations.scss';
 import {
     HeaderContainer,
     NavContainer,
@@ -9,19 +8,12 @@ import {
     Nav,
     NavList,
     LiNav,
-} from './Styled';
+} from './styled';
 
-function Header() {
+import { navigation } from './navigation';
+
+function Header({ indicePage }) {
     const [openNav, setOpenNav] = useState(false);
-
-    const navigation = [
-        { titleNav: 'Home', colorAfter: '#F1F1F1' },
-        { titleNav: 'Sobre mim', colorAfter: '#C25D00' },
-        { titleNav: 'Habilidades', colorAfter: '#7000C9' },
-        { titleNav: 'Projetos', colorAfter: '#1B4881' },
-        { titleNav: 'Freelancers', colorAfter: '#0A5A2C' },
-        { titleNav: 'Contato', colorAfter: '#C6A01A' }
-    ];
 
     const handleClickMenuHamburguer = () => setOpenNav(!openNav);
 
@@ -46,19 +38,20 @@ function Header() {
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     )}
                 </HamburgerIcon>
-            </NavContainer>
 
-            <Nav open={openNav}>
-                <NavList>
-                    {
-                        navigation.map((el, index) => (
-                            <LiNav key={index} as="li" bg_after={el.colorAfter}>
-                                {el.titleNav}
-                            </LiNav>
-                        ))
-                    }
-                </NavList>
-            </Nav>
+                <Nav open={openNav}>
+
+                    <NavList pageatual={indicePage}>
+                        {
+                            navigation.map((el, index) => (
+                                <LiNav key={index} as="li" bg_after={el.colorAfter}>
+                                    {el.titleNav}
+                                </LiNav>
+                            ))
+                        }
+                    </NavList>
+                </Nav>
+            </NavContainer>
 
         </HeaderContainer>
     );

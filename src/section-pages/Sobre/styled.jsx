@@ -15,4 +15,17 @@ export const ContentSobre = styled.div`
         padding-bottom: 3rem;
     }
 
+    @media (min-width: 1024px){
+        margin-top: 4rem;
+        max-width: 1330px;
+
+        h3 {
+            display: none;
+        }
+
+        p {
+            max-width: 700px;
+        }
+    }
+
 `
