@@ -6,7 +6,8 @@ export const ContentContato = styled.div`
     gap: 1.3rem;
     padding-inline: 2rem;
 
-    @media (min-width: 1024px){
+    @media (min-width: 1220px){
+        flex-direction: row;
         max-width: 1330px;
     }
 `
@@ -29,8 +30,8 @@ export const FormContact = styled.form`
         outline: none;
         width: 100%;
 
-        &:active, &:hover {
-            border: 1px solid rgba(250, 194, 9, .9);
+        &:focus, &:hover {
+            border: 1px solid rgba(92, 92, 92, 0.9);
             box-shadow: 0 0 10px .3px rgba(255, 255, 255, 0.25);
         }
     }
@@ -38,7 +39,7 @@ export const FormContact = styled.form`
     input, textarea {
         background-color: rgba(250, 250, 250, .85);
 
-        &:hover {
+        &:hover, &:focus {
             background-color: rgba(250, 250, 250, .90);
         }
     }
@@ -48,10 +49,15 @@ export const FormContact = styled.form`
         color: #f1f1f1;
         padding: 1rem;
 
-        &:active, &:hover {
+        &:hover, &:focus {
             background-color: rgba(199, 153, 2, 1);
-            border: none;
+            border-color: rgba(199, 153, 2, 1);
+            cursor: pointer;
         }
+    }
+
+    @media (min-width: 1024px){
+        width: 700px;
     }
 `
 
@@ -96,6 +102,34 @@ export const ContentInfos = styled.div`
         font-family: 'Fira Code', monospace;
         font-size: .8rem;
         color: #F9F9F9;
+    }
+
+    @media (min-width: 1201px){
+        border: 3px solid #202020;
+        border-radius: .4rem;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 3.5rem;
+        margin: auto;
+        margin-top: 3rem;
+        margin-left: 1rem;
+
+        &:hover {
+            background-color: rgba(250, 194, 9, .01);
+            transition: .3s;
+        }
+    }
+`
+
+export const BoxMessage = styled.div`
+    border-radius: 7px;
+    bottom: -50px;
+
+    p {
+        color: #999;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: .5rem 1rem;
     }
 `
 

@@ -10,12 +10,12 @@ import {
     BoxIcon
 } from './styled';
 
-import { arr_skills} from './skills';
+import { arr_skills } from './skills';
 
 function Habilidades() {
 
     return (
-        <SectionPrincipal bgImage={bgHabilidades}>
+        <SectionPrincipal bg_image={bgHabilidades}>
 
             <Overlay bg="rgba(0, 0, 0, .5)" />
 

@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
     background-color: #222;
@@ -41,7 +41,7 @@ export const Logo = styled.img`
 export const HamburgerIcon = styled.svg`
     width: 40px;
     transition: transform 0.3s ease;
-    transform: ${props => (props.open ? 'rotate(90deg)' : 'rotate(0deg)')};
+    transform: ${(props) => (props.open ? "rotate(90deg)" : "rotate(0deg)")};
 
     @media (min-width: 1024px) {
         display: none;
@@ -57,13 +57,13 @@ export const Nav = styled.nav`
     padding-top: 7rem;
     position: absolute;
     left: 0;
-    top: ${props => (props.open ? '0' : '-700%')};
+    top: ${(props) => (props.open ? "0" : "-700%")};
     transition: 0.7s;
     width: 100vw;
     z-index: -1;
 
     @media (min-width: 1024px) {
-        background : none;
+        background: none;
         padding: 0;
         position: static;
         width: auto;
@@ -79,29 +79,28 @@ export const NavList = styled.ul`
     list-style-type: none;
     width: 100%;
 
-    
     @media (min-width: 1024px) {
         flex-direction: row;
         gap: 3rem;
 
-        li:nth-child(${props => props.pageatual + 1})::after {
+        li:nth-child(${(props) => props.pageatual + 1})::after {
             width: 100%;
         }
     }
-    `;
+`;
 
 export const LiNav = styled.li`
     padding: 1rem;
     position: relative;
     width: 100%;
-    
+
     &:active {
-        background-color: rgba(255, 255, 255, .1);
+        background-color: rgba(255, 255, 255, 0.1);
     }
-    
+
     &::after {
-        background-color: ${(props) => props.bg_after || '#F1F1F1'};
-        content: '';
+        background-color: ${(props) => props.bg_after || "#F1F1F1"};
+        content: "";
         position: absolute;
         bottom: 12px;
         left: 1rem;
@@ -113,19 +112,23 @@ export const LiNav = styled.li`
         cursor: pointer;
         padding: 0;
         width: auto;
+        user-select: none;
+
+        &:active {
+            background: none;
+        }
 
         &::after {
-            content: '';
-            bottom: -.3rem;
+            content: "";
+            bottom: -0.3rem;
             height: 2px;
             left: 0;
-            transition: .35s;
+            transition: 0.35s;
             width: 0%;
-        }   
-        
+        }
+
         &:hover&::after {
             width: 100%;
         }
-
     }
-`
+`;

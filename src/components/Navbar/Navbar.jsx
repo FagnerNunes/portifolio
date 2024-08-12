@@ -12,11 +12,11 @@ import {
 
 import { navigation } from './navigation';
 
-function Header({ indicePage }) {
+function Header({ indicePage, setIndexMenu }) {
     const [openNav, setOpenNav] = useState(false);
 
     const handleClickMenuHamburguer = () => setOpenNav(!openNav);
-
+    
     return (
         <HeaderContainer>
 
@@ -44,7 +44,7 @@ function Header({ indicePage }) {
                     <NavList pageatual={indicePage}>
                         {
                             navigation.map((el, index) => (
-                                <LiNav key={index} as="li" bg_after={el.colorAfter}>
+                                <LiNav key={index} onClick={() => {setIndexMenu(index); setOpenNav(prev => !prev)}} bg_after={el.colorAfter}>
                                     {el.titleNav}
                                 </LiNav>
                             ))

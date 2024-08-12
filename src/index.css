@@ -19,7 +19,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-    height: 8px;
+    width: 0;
+    height: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -33,4 +34,10 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #777777;
+}
+
+@media (min-width: 1024px) {
+    ::-webkit-scrollbar {
+        height: 0px;
+    }
 }

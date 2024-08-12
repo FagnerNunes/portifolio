@@ -18,14 +18,20 @@ export const ContentSobre = styled.div`
     @media (min-width: 1024px){
         margin-top: 4rem;
         max-width: 1330px;
+        width: 100%;
+        
+        .sobre-mim {
+            width: 100%;
 
-        h3 {
-            display: none;
+            h3 {
+                display: none;
+            }
+    
+            p {
+                max-width: 700px;
+            }
         }
 
-        p {
-            max-width: 700px;
-        }
     }
 
 `

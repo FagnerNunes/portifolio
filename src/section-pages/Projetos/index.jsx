@@ -11,7 +11,7 @@ const Projetos = () => {
 
     return (
         <>
-            <SectionPrincipal bgImage={bgProjetos}>
+            <SectionPrincipal bg_image={bgProjetos}>
 
             <Overlay bg="rgba(0, 0, 0, .5)" />
 

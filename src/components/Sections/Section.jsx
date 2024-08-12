@@ -15,15 +15,12 @@ const gradient = `linear-gradient(
 `
 
 export const SectionPrincipal = styled.div`
-    background-image: ${props => props.bgImage ? `url(${props.bgImage})` : gradient};
+    background-image: ${props => props.bg_image ? `url(${props.bg_image})` : gradient};
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
-    /* display: grid;
-    place-items: center; */
     padding-block: 80px;
     position: relative;
-    min-height: 800px;
     height: auto;
     width: 100%;
     z-index: 1;

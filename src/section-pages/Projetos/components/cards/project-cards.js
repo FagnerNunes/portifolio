@@ -1,4 +1,4 @@
-import preview_shortly from '../../../../assets/images/projetos/preview-shortly.jpg'
+import preview_shortly from '../../../../assets/images/projetos/preview-shortly.png'
 import preview_card_interactive from '../../../../assets/images/projetos/preview-card-interactive-bank.png'
 import preview_search_github from '../../../../assets/images/projetos/preview-search-user-github.png'
 import preview_my_class_app from '../../../../assets/images/projetos/preview-my-class-app.png'

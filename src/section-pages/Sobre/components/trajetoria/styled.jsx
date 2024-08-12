@@ -1,36 +1,31 @@
-import styled from 'styled-components'
-
-export const ContentTrajetoria = styled.div`
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Fira Code', monospace;
-    gap: 2rem;
-    padding-block: 2rem;
-    width: 100%;
-`
+import styled from "styled-components";
 
 export const ConteudoDoAno = styled.div`
     align-items: center;
     display: flex;
     flex-direction: column;
+    font-family: "Fira Code", monospace;
     gap: 4rem;
     width: 100%;
-`
+
+    @media (min-width: 1024px) {
+        align-items: flex-start;
+    }
+`;
 
 export const Circle = styled.div`
     background-color: #fff;
-    border: 4px solid #0094FF;
+    border: 4px solid #0094ff;
     border-radius: 100%;
-    box-shadow: 0 0 10px .3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 0.3px rgba(0, 0, 0, 0.3);
     font-size: 2rem;
     font-weight: bold;
     padding: 2.4rem 1.6rem;
     position: relative;
 
     &::before {
-        content: '';
-        background-color: #C25D00;
+        content: "";
+        background-color: #c25d00;
         height: 300px;
         left: 49%;
         position: absolute;
@@ -38,12 +33,21 @@ export const Circle = styled.div`
         width: 6px;
         z-index: -1;
     }
-`
+
+    @media (min-width: 1024px) {
+        &::before {
+            left: -100px;
+            top: 49%;
+            height: 6px;
+            width: 80vw;
+        }
+    }
+`;
 
 export const Card = styled.div`
     background-color: #313131;
     border-radius: 20px;
-    box-shadow: 0 0 10px .3px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 0.3px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     font-size: 1.2rem;
@@ -64,7 +68,7 @@ export const Card = styled.div`
         .data {
             align-items: center;
             display: flex;
-            gap: .2rem;
+            gap: 0.2rem;
         }
 
         p.descricao {
@@ -73,4 +77,10 @@ export const Card = styled.div`
         }
     }
 
-`
+    @media (min-width: 1024px) {
+        background: none;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+`;

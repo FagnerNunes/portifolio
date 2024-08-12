@@ -13,7 +13,7 @@ import {
 const Home = () => {
     return (
         <>
-            <SectionPrincipal bgImage={bgHome}>
+            <SectionPrincipal bg_image={bgHome}>
 
                 <Overlay />
 
