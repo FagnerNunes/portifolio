@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.be97b7c7.css",
+    "main.js": "./static/js/main.c04e9775.js",
+    "static/media/bg-sobre.jpg": "./static/media/bg-sobre.42fd8c81d7e81ce6389c.jpg",
+    "static/media/bg-contato.jpg": "./static/media/bg-contato.3cc593ca8c93aa9ab875.jpg",
+    "static/media/bg-home.jpg": "./static/media/bg-home.1b8ba2e98943c4a3fc89.jpg",
+    "static/media/bg-projetos.jpg": "./static/media/bg-projetos.793cab8d9bf580811f1c.jpg",
+    "static/media/perfil-fagner.png": "./static/media/perfil-fagner.56d76cb01b6c067b2831.png",
+    "static/media/bg-habilidades.jpg": "./static/media/bg-habilidades.eeb94e2d5c748935433f.jpg",
+    "static/media/preview-page-twitter.png": "./static/media/preview-page-twitter.e2740fa4f8e0d40b6291.png",
+    "static/media/preview-shortly.png": "./static/media/preview-shortly.320295dc3016cbae25db.png",
+    "static/media/logo.svg": "./static/media/logo.e9681cfab6aae717822347b06ddb8349.svg",
+    "static/media/preview-search-user-github.png": "./static/media/preview-search-user-github.bdab1db78202b9441ea3.png",
+    "static/media/preview-my-class-app.png": "./static/media/preview-my-class-app.e1ef6b3eae20617d0738.png",
+    "static/media/preview-card-interactive-bank.png": "./static/media/preview-card-interactive-bank.55cfaf9afe36c1f7495c.png",
+    "static/media/preview-page-facebook.png": "./static/media/preview-page-facebook.261a9d554156a3b2ee4a.png",
+    "index.html": "./index.html",
+    "main.be97b7c7.css.map": "./static/css/main.be97b7c7.css.map",
+    "main.c04e9775.js.map": "./static/js/main.c04e9775.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be97b7c7.css",
+    "static/js/main.c04e9775.js"
+  ]
+}
