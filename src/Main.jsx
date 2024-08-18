@@ -15,11 +15,11 @@ function Main() {
     const [isScrolling, setIsScrolling] = useState(false);
 
     const sections = [
-        <Home key="home"/>,
-        <Sobre key="sobre"/>,
-        <Habilidades key="habilidades"/>,
-        <Projetos key="projetos"/>,
-        <Contato key="contato"/>,
+        <Home key="home" />,
+        <Sobre key="sobre" />,
+        <Habilidades key="habilidades" />,
+        <Projetos key="projetos" />,
+        <Contato key="contato" />,
     ];
 
     const handleWheel = useCallback(
@@ -38,17 +38,35 @@ function Main() {
         [currentIndex, sections.length, isScrolling]
     );
 
+    const handleKeyDown = useCallback(
+        (e) => {
+            if (isScrolling) return;
+
+            setIsScrolling(true);
+            setTimeout(() => setIsScrolling(false), 600);
+
+            if (e.key === "ArrowRight" && currentIndex < sections.length - 1) {
+                setCurrentIndex((prev) => prev + 1);
+            } else if (e.key === "ArrowLeft" && currentIndex > 0) {
+                setCurrentIndex((prev) => prev - 1);
+            }
+        },
+        [currentIndex, sections.length, isScrolling]
+    );
+
     useEffect(() => {
         if (window.innerWidth < 1024) {
             return;
         }
 
         window.addEventListener("wheel", handleWheel);
+        window.addEventListener("keydown", handleKeyDown);
 
         return () => {
             window.removeEventListener("wheel", handleWheel);
+            window.removeEventListener("keydown", handleKeyDown);
         };
-    }, [handleWheel]);
+    }, [handleWheel, handleKeyDown]);
 
     useEffect(() => {
         if (mainContainerRef.current) {

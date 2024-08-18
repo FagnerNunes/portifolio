@@ -45,8 +45,10 @@ export const ImagePerfil = styled.figure`
         user-select: none;
         text-align: center;
         margin: 0 auto;
-        max-width: 350px;
-        width: 80%;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top;
     }
 
     @keyframes animar_borda {
@@ -71,7 +73,8 @@ export const ImagePerfil = styled.figure`
         width: auto;
 
         img {
-            width: 100%;
+            width: 400px;
+            height: 400px;
         }
     }
 `;

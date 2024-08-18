@@ -6,7 +6,7 @@ export const ContentBtns = styled.div`
     gap: 1.4rem;
     justify-content: flex-end;
     position: absolute;
-    top: 400px;
+    bottom: 10px;
     width: 100%;
 
     button {

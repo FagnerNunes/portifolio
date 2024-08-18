@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "./static/css/main.be97b7c7.css",
-    "main.js": "./static/js/main.c04e9775.js",
-    "static/media/bg-sobre.jpg": "./static/media/bg-sobre.42fd8c81d7e81ce6389c.jpg",
-    "static/media/bg-contato.jpg": "./static/media/bg-contato.3cc593ca8c93aa9ab875.jpg",
-    "static/media/bg-home.jpg": "./static/media/bg-home.1b8ba2e98943c4a3fc89.jpg",
-    "static/media/bg-projetos.jpg": "./static/media/bg-projetos.793cab8d9bf580811f1c.jpg",
-    "static/media/perfil-fagner.png": "./static/media/perfil-fagner.56d76cb01b6c067b2831.png",
-    "static/media/bg-habilidades.jpg": "./static/media/bg-habilidades.eeb94e2d5c748935433f.jpg",
+    "main.js": "./static/js/main.e7f6ca0e.js",
+    "static/media/bg-sobre.jpg": "./static/media/bg-sobre.fa60bf42cd5a9e090c25.jpg",
+    "static/media/perfil-fagner-4.png": "./static/media/perfil-fagner-4.d36d76591f897222bc4f.png",
+    "static/media/bg-home.jpg": "./static/media/bg-home.a1e0731c8a6fe4bb4c01.jpg",
+    "static/media/bg-contato.jpg": "./static/media/bg-contato.9478ba00102b26bec842.jpg",
+    "static/media/bg-projetos.jpg": "./static/media/bg-projetos.a26e18abf6460e5287f2.jpg",
+    "static/media/bg-habilidades.jpg": "./static/media/bg-habilidades.3acabd98924454d2345c.jpg",
     "static/media/preview-page-twitter.png": "./static/media/preview-page-twitter.e2740fa4f8e0d40b6291.png",
     "static/media/preview-shortly.png": "./static/media/preview-shortly.320295dc3016cbae25db.png",
     "static/media/logo.svg": "./static/media/logo.e9681cfab6aae717822347b06ddb8349.svg",
@@ -17,10 +17,10 @@
     "static/media/preview-page-facebook.png": "./static/media/preview-page-facebook.261a9d554156a3b2ee4a.png",
     "index.html": "./index.html",
     "main.be97b7c7.css.map": "./static/css/main.be97b7c7.css.map",
-    "main.c04e9775.js.map": "./static/js/main.c04e9775.js.map"
+    "main.e7f6ca0e.js.map": "./static/js/main.e7f6ca0e.js.map"
   },
   "entrypoints": [
     "static/css/main.be97b7c7.css",
-    "static/js/main.c04e9775.js"
+    "static/js/main.e7f6ca0e.js"
   ]
 }

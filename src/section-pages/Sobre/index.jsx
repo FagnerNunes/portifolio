@@ -3,7 +3,10 @@ import bgSobre from "../../assets/background/bg-sobre.jpg";
 import { SectionPrincipal, Overlay } from "../../components/Sections/Section";
 import { ContentSobre } from "./styled";
 
-import { ContentBtns, ContentCarrossel } from "../../components/Carrossel/styled";
+import {
+    ContentBtns,
+    ContentCarrossel,
+} from "../../components/Carrossel/styled";
 
 import {
     TbPlayerTrackPrevFilled,
@@ -48,7 +51,6 @@ function Sobre() {
                     ? true
                     : false,
         }));
-
     }, [indexTrajetoria]);
 
     return (
@@ -58,21 +60,24 @@ function Sobre() {
                 <div className="sobre-mim">
                     <Title>Sobre mim</Title>
                     <p>
-                        Sou um entusiasta da tecnologia, iniciei meus estudos de
-                        forma autônoma em outubro de 2021 e gostei já de cara
-                        nos primeiros códigos html. Desde então venho estudando
-                        para aperfeiçoar cada vez mais meus conhecimentos como
-                        desenvolvedor. Possuo experiência de forma autônoma e
-                        estou em busca do meu primeiro emprego na área de TI.
+                        Iniciei meus estudos em tecnologia por conta própria em
+                        outubro de 2021, logo me identifiquei nos primeiros
+                        códigos em HTML. Desde então, venho me dedicando a
+                        aprender e a melhorar minhas habilidades como
+                        desenvolvedor. Atualmente, trabalho como Desenvolvedor
+                        Fullstack Jr. e estou cursando o 4º semestre de Análise
+                        e Desenvolvimento de Sistemas. Fiz diversos cursos para
+                        me aprimorar e estou sempre em busca de novos desafios e
+                        oportunidades para continuar evoluindo na área.
                     </p>
                 </div>
                 <ContentCarrossel
                     ref={contentTrajetoriaRef}
-                    trajetoria_atual={indexTrajetoria} >
-
+                    trajetoria_atual={indexTrajetoria}
+                >
                     <Trajetoria />
 
-                    <ContentBtns >
+                    <ContentBtns>
                         <button
                             disabled={statusBtn.prev}
                             type="button"

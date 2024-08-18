@@ -1,6 +1,6 @@
 import React from 'react';
 import bgHome from '../../assets/background/bg-home.jpg';
-import imgPerfil from '../../assets/images/perfil/perfil-fagner.png';
+import imgPerfil from '../../assets/images/perfil/perfil-fagner-4.png';
 import { BsChevronDown } from "react-icons/bs";
 import { SectionPrincipal, Overlay } from '../../components/Sections/Section';
 import {

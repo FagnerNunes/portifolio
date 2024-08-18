@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from "styled-components";
 
 export const ContentSobre = styled.div`
     display: flex;
@@ -8,30 +8,28 @@ export const ContentSobre = styled.div`
 
     .sobre-mim {
         color: #fff;
-        font-family: 'Fira Code', monospace;
+        font-family: "Fira Code", monospace;
         display: flex;
         flex-direction: column;
         gap: 1.2rem;
         padding-bottom: 3rem;
     }
 
-    @media (min-width: 1024px){
+    @media (min-width: 1024px) {
         margin-top: 4rem;
         max-width: 1330px;
         width: 100%;
-        
+
         .sobre-mim {
             width: 100%;
 
             h3 {
                 display: none;
             }
-    
+
             p {
                 max-width: 700px;
             }
         }
-
     }
-
-`
+`;

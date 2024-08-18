@@ -58,6 +58,11 @@ export const FormContact = styled.form`
 
     @media (min-width: 1024px){
         width: 700px;
+
+        textarea {
+            max-width: 700px;
+            max-height: 350px;
+        }
     }
 `
 
