@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "./static/css/main.be97b7c7.css",
-    "main.js": "./static/js/main.e7f6ca0e.js",
+    "main.js": "./static/js/main.cbc93eae.js",
     "static/media/bg-sobre.jpg": "./static/media/bg-sobre.fa60bf42cd5a9e090c25.jpg",
     "static/media/perfil-fagner-4.png": "./static/media/perfil-fagner-4.d36d76591f897222bc4f.png",
     "static/media/bg-home.jpg": "./static/media/bg-home.a1e0731c8a6fe4bb4c01.jpg",
@@ -17,10 +17,10 @@
     "static/media/preview-page-facebook.png": "./static/media/preview-page-facebook.261a9d554156a3b2ee4a.png",
     "index.html": "./index.html",
     "main.be97b7c7.css.map": "./static/css/main.be97b7c7.css.map",
-    "main.e7f6ca0e.js.map": "./static/js/main.e7f6ca0e.js.map"
+    "main.cbc93eae.js.map": "./static/js/main.cbc93eae.js.map"
   },
   "entrypoints": [
     "static/css/main.be97b7c7.css",
-    "static/js/main.e7f6ca0e.js"
+    "static/js/main.cbc93eae.js"
   ]
 }
