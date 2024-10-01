@@ -27,12 +27,12 @@ export const ContentBtns = styled.div`
         }
 
         svg {
-            color: ${props => props.colorPrimary ?? '#c25d00'};
+            color: ${(props) => props.colorPrimary ?? "#c25d00"};
             font-size: 1rem;
         }
 
         &:hover:not(:disabled) {
-            background-color: ${props => props.colorPrimary ?? '#c25d00'};
+            background-color: ${(props) => props.colorPrimary ?? "#c25d00"};
 
             svg {
                 color: #313131;
@@ -43,31 +43,40 @@ export const ContentBtns = styled.div`
     @media (min-width: 1024px) {
         display: flex;
     }
-    `
+
+    @media (max-height: 800px) {
+        align-self: flex-start;
+        margin-top: 2.8rem;
+        top: 0;
+    }
+`;
 
 export const ContentCarrossel = styled.div`
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    
-    @media (min-width: 1024px){
+
+    @media (min-width: 1024px) {
         align-items: flex-start;
         flex-direction: row;
         flex-wrap: wrap;
         height: 400px;
         position: relative;
-        
+
         & > .container-trajetoria {
             position: absolute;
             visibility: hidden;
             opacity: 0;
-            transition: all .3s;
+            transition: all 0.3s;
         }
-        
-        & > .container-trajetoria:nth-child(${props => props.trajetoria_atual + 1 ?? 1}) {
+
+        &
+            > .container-trajetoria:nth-child(
+                ${(props) => props.trajetoria_atual + 1 ?? 1}
+            ) {
             left: 0;
             visibility: visible;
             opacity: 1;
         }
     }
-    `
+`;

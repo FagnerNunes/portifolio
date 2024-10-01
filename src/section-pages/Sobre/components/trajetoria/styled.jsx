@@ -9,6 +9,7 @@ export const ConteudoDoAno = styled.div`
     width: 100%;
 
     @media (min-width: 1024px) {
+        gap: 2rem;
         align-items: flex-start;
     }
 `;
